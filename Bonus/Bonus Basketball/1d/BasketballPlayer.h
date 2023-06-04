@@ -14,7 +14,5 @@ class BasketballPlayer : public Player
         BasketballPlayer(const string& name,const string& surname,const string& position);
         string getPosition() const;
         string getPlayerDescription() const override;
-        bool operator!=(const BasketballPlayer& other) const {return !(this->getPlayerDescription() == other.getPlayerDescription());
-}
 };
 #endif
